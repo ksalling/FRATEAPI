@@ -19,7 +19,7 @@ dotenv.config();
 // WebApp Initialization
 // const port = parseInt(process.env.APP_PORT, 10) || 3000;
 // const dev = process.env.NODE_ENV !== 'production';
-// const app = next({ dev });
+const app = next({ dev });
 // const handle = app.getRequestHandler();
 
 // Hook Server Initialization
