@@ -27,7 +27,7 @@ const hookPort = parseInt(process.env.HOOK_PORT, 10) || 3001;
 const hookHandle = app.getRequestHandler();
 
 // Load .env Variables and Create KOA Routers
-// const { SHOPIFY_API_SECRET_KEY, SHOPIFY_API_KEY, CRYPTO_KEY } = process.env;
+const { SHOPIFY_API_SECRET_KEY, SHOPIFY_API_KEY, CRYPTO_KEY } = process.env;
 // const router = new KoaRouter();
 const hookRouter = new KoaRouter();
 
