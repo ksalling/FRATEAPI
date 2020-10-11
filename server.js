@@ -866,7 +866,7 @@ app.prepare().then(() => {
     await hookHandle(ctx.req, ctx.res);
     ctx.respond = false;
     ctx.res.statusCode = 200;
-
+    ctx.redirect('/');
   });
 
   // server.listen(port, () => {
