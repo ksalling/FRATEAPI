@@ -8,7 +8,7 @@ import Cookies from 'js-cookie';
 import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from 'react-apollo';
 
-import Index from './index';
+//import Index from './index';
 
 //import CssBaseline from '@material-ui/core/CssBaseline';
 import 'fontsource-roboto';
@@ -35,7 +35,7 @@ class MyApp extends App {
           <title>Frate</title>
           <meta charSet="utf-8" />
         </Head>
-        <Index />
+        <Component {...pageProps} />
       </React.Fragment>
     );
   }
