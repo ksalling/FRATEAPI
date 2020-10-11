@@ -8,6 +8,8 @@ import Cookies from 'js-cookie';
 import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from 'react-apollo';
 
+import Index from './index';
+
 //import CssBaseline from '@material-ui/core/CssBaseline';
 import 'fontsource-roboto';
 
@@ -33,7 +35,15 @@ class MyApp extends App {
           <title>Frate</title>
           <meta charSet="utf-8" />
         </Head>
-        <Provider config={config}>
+        <Index />
+      </React.Fragment>
+    );
+  }
+}
+
+export default MyApp;
+
+{/* <Provider config={config}>
             <AppProvider i18n={translations}>
                 <ApolloProvider client={client} >
                   
@@ -41,10 +51,4 @@ class MyApp extends App {
                   
                 </ApolloProvider>
             </AppProvider>
-        </Provider>
-      </React.Fragment>
-    );
-  }
-}
-
-export default MyApp;
+        </Provider> */}
